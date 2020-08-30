@@ -18,14 +18,10 @@ Books$ItalCook <- factor(Books$ItalCook,levels = c("1","0"),labels = c("ItalCook
 Books$ItalAtlas <- factor(Books$ItalAtlas,levels = c("1","0"),labels = c("ItalAtlas",""))
 Books$ItalArt <- factor(Books$ItalArt,levels = c("1","0"),labels = c("ItalArt",""))
 Books$Florence <- factor(Books$Florence,levels = c("1","0"),labels = c("Florence",""))
-
-
 library(car)
 library(carData)
 library(mvinfluence)
-
 Book1 <- as(Books,"transactions")
-
 itemFrequencyPlot(Book1,topN=25)
 
 rules <- apriori(Book1, parameter = list(supp = 0.005, confidence = 0.50, minlen = 2, maxlen = 4)) 
