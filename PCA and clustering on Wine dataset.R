@@ -141,4 +141,3 @@ table(KmeansPCA=clust2,KmeansOriginal=clusto1)
 
 #comparing between the two model PCA and Original
 mean(clust2==clusto1) 
-
