@@ -25,9 +25,7 @@ AirLine_DF$cc3_miles = ifelse(AirLine_DF$cc3_miles==1,2500,
 
 
 data = scale(AirLine_DF)
-
 d <- dist(data[,2:11], method = "euclidean") 
-
 fit <- hclust(d, method="ward.D2")
 fit <- as.dendrogram(fit)
 library(dendextend)
