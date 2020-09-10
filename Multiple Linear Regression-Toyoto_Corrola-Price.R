@@ -3,7 +3,6 @@ View(Price)
 #Scatter Plot Matrix:
 pairs(Price)
 
-
 #Correlation Matrix:
 cor(Price[,3:10])
 #Regression Model and Summary
