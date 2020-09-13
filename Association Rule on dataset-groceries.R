@@ -16,7 +16,6 @@ groceryrules <- apriori(groceries, parameter = list(support =
 groceryrules
 
 summary(groceryrules)
-
 inspect(groceryrules[1:3])
 
 #Improving model performance
