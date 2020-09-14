@@ -23,7 +23,6 @@ windows(); pairs(startups)
 
 cor(startups)
 summary(startups)
-
 normalize <- function(x) { return((x - min(x)) / (max(x) - min(x)))}
 startup_norm<-as.data.frame(lapply(startups,normalize))
 summary(startup_norm)
