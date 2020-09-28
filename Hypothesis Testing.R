@@ -3,8 +3,6 @@
 cutlets<-read.csv("E:\\Data Science\\Assignments\\cutlets.csv")
 View(cutlets)
 attach(cutlets)
-
-
 library(gmodels)
 plot(Unit.A)
 plot(Unit.B)
