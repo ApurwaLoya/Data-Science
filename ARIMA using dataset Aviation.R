@@ -67,8 +67,6 @@ plot(forecast(new_model,h=4))
 forecast_new <- data.frame(forecast(new_model,h=4))
 forecast_new
 
-
-
 ##ARIMA Model
 
 
