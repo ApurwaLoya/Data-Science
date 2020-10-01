@@ -6,7 +6,6 @@ summary(iris)
 library(party)
 library(caret)
 
-
 set.seed(7)
 inTraininglocal<-createDataPartition(iris$Species,p=.70,list = F)
 training<-iris[inTraininglocal,]
