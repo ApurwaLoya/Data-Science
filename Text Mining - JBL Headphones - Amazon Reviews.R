@@ -1,5 +1,4 @@
 setwd("E:\\Data Science\\Assignments")
-
 library(rvest)
 library(XML)
 library(magrittr)
