@@ -26,8 +26,6 @@ nrc_data<-get_nrc_sentiment(example)
 windows()
 barplot(colSums(nrc_data), las = 1, col = rainbow(10), ylab = 'Count', main = 'Emotion scores')
 
-
-
 sentiment_vector<-get_sentiment(example,method="bing")
 sentiment_afinn<-get_sentiment(example,method="afinn")
 sentiment_nrc<-get_sentiment(example,method="nrc")
