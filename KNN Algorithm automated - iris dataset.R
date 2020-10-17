@@ -2,7 +2,6 @@
 library(caret)
 # load the dataset
 data(iris)
-
 library(e1071)
 
 ctrl <- trainControl(method="repeatedcv",repeats = 3) 
